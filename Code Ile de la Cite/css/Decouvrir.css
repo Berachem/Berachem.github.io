@@ -12,10 +12,14 @@ Couleur principale de la charte graphique : #ea5c0d
     font-family: dynobold;
     src: url(../fonts/dyno-sans/Dyno_Bold.ttf);
   }
-
   @font-face {
     font-family: dynoregular;
     src: url(../fonts/dyno-sans/Dyno_Regular.ttf);
+  }
+
+  @font-face {
+    font-family: cicle;
+    src: url(../fonts/cicle/Cicle\ Fina.ttf);
   }
 
 
@@ -147,11 +151,13 @@ body{
 }
 .card{ 
     padding-top: 10px;
+    margin-left: auto;
+        margin-right: auto;
 }
 
 .card-text,
 .card-subtitle{
-    font-family: dynoregular;
+    font-family: cicle;
 }
 
 .btn-danger{
@@ -174,6 +180,8 @@ body{
 }
 .sous_titre h2{
     padding-left: 1cm;
+    font-family: cicle;
+    text-transform: uppercase;
 }
 
 .table{
@@ -345,14 +353,16 @@ ul.social-icons {
     }
 
     #TitrePage > img{
-        width: 95%;
+        width: 85%;
         height: 14vh;
     }
     #TitrePage > h1{
         position: relative;
       text-align: center;
-      margin-top: -20%;
+      margin-top: -22%;
+      font-size: xx-large;
     }
+
 
     /*Diapo */
     #diapo{
@@ -367,6 +377,11 @@ ul.social-icons {
         padding-bottom: 1cm;
         width: 95%;
         height: 9cm;
+    }
+
+    .card{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .table{

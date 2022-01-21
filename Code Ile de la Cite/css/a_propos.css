@@ -12,6 +12,15 @@ Couleur principale de la charte graphique : #ea5c0d
     font-family: dynobold;
     src: url(../fonts/dyno-sans/Dyno_Bold.ttf);
   }
+  @font-face {
+    font-family: dynoregular;
+    src: url(../fonts/dyno-sans/Dyno_Regular.ttf);
+  }
+
+  @font-face {
+    font-family: cicle;
+    src: url(../fonts/cicle/Cicle\ Fina.ttf);
+  }
 
 body{
     background-color: #333333;
@@ -114,7 +123,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    text-justify: auto;
     color: #ea5c0d;
     padding-top: 1cm;
     font-size: 3vh;
@@ -126,6 +134,11 @@ body{
     margin-right: auto;
     width: 70%;
     text-align: center;
+    font-family: cicle;
+}
+
+#rendus{
+    font-family: cicle;
 }
 
 #diapo{
@@ -296,13 +309,14 @@ ul.social-icons {
     }
 
     #TitrePage > img{
-        width: 95%;
+        width: 85%;
         height: 14vh;
     }
     #TitrePage > h1{
         position: relative;
       text-align: center;
-      margin-top: -20%;
+      margin-top: -22%;
+      font-size: xx-large;
     }
 
     /*Diapo */

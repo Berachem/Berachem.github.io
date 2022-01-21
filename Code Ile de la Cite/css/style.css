@@ -28,7 +28,10 @@ body {
     font-family: dynobold;
     color: white;
 }
-
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
 /* ============
 BARRE DE NAVIGATION
 + CAROUSEL
@@ -56,10 +59,7 @@ BARRE DE NAVIGATION
     background: #333333;
     width:100%;
 }
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
+
 
 .navbar-links {
     height: 100%;
@@ -104,9 +104,7 @@ BARRE DE NAVIGATION
     border-radius: 10px;
 }
 
-.carousel {
-    top:0;
-}
+
 .carousel-inner {
     width: 100%; 
     overflow: hidden;
@@ -308,7 +306,7 @@ ul.social-icons {
 .fa-github:hover {
     background-color: #5a32a3;
 }
-@media (min-width: 801px) and (max-width:1200px) {
+@media screen and (min-width: 801px) and (max-width:1200px) {
     #TitrePage > img{
         width: 50%;
         height: 12vh;
@@ -320,14 +318,14 @@ ul.social-icons {
     #TitrePage > h1{
         position: relative;
       text-align: center;
-      margin-top: -8.5%;
+      margin-top: -10%;
     }
     #Video{
         width: 75%;
     }
 }
 
-@media (max-width: 800px) {
+@media screen and  (max-width: 800px) {
     /* Barre de navigation */
     .navbar {
         flex-direction: column;
@@ -359,9 +357,15 @@ ul.social-icons {
     .navbar-links.active {
         display: flex;
     }
+
+    .carousel-caption h2{
+        font-size: 8vh;
+    }
+
+
     /* Titre avec barre orange */
     #TitrePage > img{
-        width: 70%;
+        width: 80%;
         height: 12vh;
         display: block;
         margin-left: auto;
@@ -371,13 +375,13 @@ ul.social-icons {
     #TitrePage > h1{
         position: relative;
       text-align: center;
-      margin-top: -20%;
+      margin-top: -22%;
     }
 
     /*Video */
     #Video{
-        width: 75%;
-        height: 5cm;
+        width: 90%;
+        height: 4.5cm;
         display: block;
         margin-left: auto;
         margin-right: auto;
