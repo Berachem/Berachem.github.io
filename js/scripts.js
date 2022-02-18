@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', event => {
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
-            offset: 5,
+            offset: 6,
         });
     };
 
@@ -32,3 +32,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
