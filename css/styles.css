@@ -38,15 +38,14 @@
 }
 
 
-.carousel{
-
-  padding-left: 20%;
+#myphoto:hover{
+  content: url('/assets/img/moi_petit.jpg');
 }
 
 .carousel-item > img{
   width: 100%;
   height: 100%;
-  margin: auto;
+ 
   
 }
 .carousel-caption{
