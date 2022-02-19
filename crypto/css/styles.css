@@ -38,10 +38,6 @@
 }
 
 
-#myphoto:hover{
-  content: url('/assets/img/moi_petit.jpg');
-}
-
 .carousel-item > img{
   width: 100%;
   height: 100%;
@@ -49,7 +45,7 @@
   
 }
 .carousel-caption{
-  background-color: #0d6dfdc9;
+  background-color: #f7941a79;
   
 }
 *,
@@ -2980,13 +2976,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #f7931a;
-  border-color: #f7931a;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
+  background-color: #0d6dfdc9;
+  border-color: #0d6dfdc9;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
