@@ -11016,22 +11016,10 @@ section.resume-section .resume-section-content {
 
 @media only screen 
 and (max-width : 1200px) {
-    .carousel-caption >p{
-      display: none ;
-      font-size: 0px;
-    }
-    .carousel-caption >p{
-      background-color: #f0f0f000;
-      font-size: 0px;
-    }
-   .carousel-caption > a>img{
-     width: 25px;
-     height: 25px;
-   }
-   .carousel-caption>*{
-     background-color: rgba(13, 110, 253, 0.23);
-     color: white;
-   }
+  .diapo{
+    width: 99%;
+    height: 63vw;
+  }
   
    
    
