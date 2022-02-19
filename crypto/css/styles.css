@@ -37,7 +37,12 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
-
+.rota {
+  transition: transform .7s ease-in-out;
+}
+.rota:hover {
+  transform: rotate(360deg);
+}
 .carousel-item > img{
   width: 100%;
   height: 100%;

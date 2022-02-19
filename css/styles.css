@@ -37,6 +37,12 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+.rota {
+  transition: transform .5s ease-in-out;
+}
+.rota:hover {
+  transform: rotate(360deg);
+}
 
 #myphoto:hover{
   content: url('/assets/img/moi_petit.jpg');
