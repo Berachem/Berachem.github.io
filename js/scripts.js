@@ -33,3 +33,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+$(document).ready(function(){
+    $("a").tooltip();
+    $("span").tooltip();
+});
+
