@@ -53,6 +53,10 @@
   background-color: #f7941a79;
   
 }
+::selection{
+  background-color: #ffc107;
+}
+
 *,
 *::before,
 *::after {
