@@ -60,6 +60,19 @@
   background-color: #0d6dfdc9;
   
 }
+
+.progress { 
+  position: fixed;
+   top: 0; 
+   left: 0; 
+   height: 10px; 
+   background-color: #0d6efd; 
+   transition: all linear 0.1s; 
+   min-width: 12%; 
+
+}
+
+
 *,
 *::before,
 *::after {

@@ -53,6 +53,18 @@
   background-color: #f7941a79;
   
 }
+
+.progress { 
+  position: fixed;
+   top: 0; 
+   left: 0; 
+   height: 10px; 
+   background-color: #f7931a; 
+   transition: all linear 0.1s; 
+   min-width: 12%; 
+
+}
+
 ::selection{
   background-color: #ffc107;
 }
