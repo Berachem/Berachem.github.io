@@ -37,7 +37,16 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+@media (min-width: 688px) {
+  .carousel-item>img {
+    height: 650px;
+    max-height: 650px;
+  }
+}
 
+.carousel-caption{
+  opacity: 0.95;
+}
 
 .rota {
   transition: transform .5s ease-in-out;
@@ -50,16 +59,12 @@
   content: url('/assets/img/moi_petit.jpg');
 }
 
-.carousel-item > img{
-  width: 100%;
-  height: 100%;
- 
-  
-}
 .carousel-caption{
   background-color: #0d6dfdc9;
   
 }
+
+
 
 .progress { 
   position: fixed;
@@ -11049,7 +11054,7 @@ and (max-width : 1200px) {
      height: 25px;
    }
    .carousel-caption>*{
-     background-color: rgba(13, 110, 253, 0.23);
+    
      color: white;
    }
   
