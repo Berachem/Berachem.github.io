@@ -11057,7 +11057,9 @@ and (max-width : 1200px) {
     
      color: white;
    }
-  
+   .carousel-caption{
+     opacity: 0.9;
+   }
    
    
 
