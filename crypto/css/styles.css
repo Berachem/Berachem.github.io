@@ -2146,6 +2146,9 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .progress{
+    background-color: whitesmoke !important; 
+  }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
