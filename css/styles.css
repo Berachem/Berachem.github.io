@@ -42,11 +42,7 @@
     height: 650px;
     max-height: 650px;
   }
-
-  
 }
-
-
 
 .carousel-caption{
   opacity: 0.95;
@@ -2158,9 +2154,6 @@ progress {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-  }
-  .progress{
-    background-color: whitesmoke !important; 
   }
 }
 @media (max-width: 1199.98px) {
@@ -11067,9 +11060,7 @@ and (max-width : 1200px) {
    .carousel-caption{
      opacity: 0.9;
    }
-   .progress{
-     background-color: beige;
-     z-index: 2;
-   }
    
+   
+
 }
