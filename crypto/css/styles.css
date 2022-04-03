@@ -2124,6 +2124,13 @@ progress {
   border-color: #373b3e;
 }
 
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+ 
+}
+
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
