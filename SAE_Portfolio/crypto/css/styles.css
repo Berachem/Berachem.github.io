@@ -53,6 +53,18 @@
   background-color: #f7941a79;
   
 }
+
+.progress { 
+  position: fixed;
+   top: 0; 
+   left: 0; 
+   height: 10px; 
+   background-color: #f7931a; 
+   transition: all linear 0.1s; 
+   min-width: 12%; 
+
+}
+
 ::selection{
   background-color: #ffc107;
 }
@@ -76,7 +88,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: white;
+  background-color: #F4F1DE;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2110,6 +2122,13 @@ progress {
   --bs-table-hover-color: #fff;
   color: #fff;
   border-color: #373b3e;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+ 
 }
 
 .table-responsive {
