@@ -43,6 +43,12 @@
     max-height: 650px;
   }
 }
+@media (max-width: 688px) {
+  .carousel-item>img {
+    height: 225px;
+    max-height: 650px;
+  }
+}
 
 .carousel-caption{
   opacity: 0.95;
