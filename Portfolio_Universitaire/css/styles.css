@@ -12,6 +12,14 @@
     scroll-behavior: smooth;
 }
 
+.savoirs{
+    text-align: unset;
+}
+.img-thumbnail{
+    max-width: 80%;
+    max-height: 15cm;
+}
+
 .accordion-body{
     color: white;
     text-align: justify;
@@ -21,7 +29,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
 }
 .accordion-item{
     background-color: red; 
