@@ -65,5 +65,7 @@ function topFunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
 }
+/* play video twice as fast */
+document.querySelector('video').playbackRate = 3;
 
 
