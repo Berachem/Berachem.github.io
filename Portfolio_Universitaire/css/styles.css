@@ -25,6 +25,8 @@
     text-align: justify;
     background-color: #0b132b;
 }
+
+
 .accordion-body > img, .accordion-body > video{
     display: block;
     margin-left: auto;
