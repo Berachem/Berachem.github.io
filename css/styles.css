@@ -16,6 +16,12 @@
 .flou{
     filter: blur(0.10rem);
 }
+.status {
+    display: none;
+}
+.ancien-status:hover{
+    display: none;
+}
 
 .carousel-caption>p{background-color:#f0f0f000;}
 
