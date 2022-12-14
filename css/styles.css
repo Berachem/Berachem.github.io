@@ -12,9 +12,16 @@
  html {
     scroll-behavior: smooth;
 }
-
 .flou:hover{
-    filter: blur(0.10rem);
+    filter: blur(0.1rem);
+}
+
+.flouLogo{
+    filter: blur(0.1rem);
+}
+.flouLogo:hover{
+    /* remove filter */
+    filter: blur(0);
 }
  
 
