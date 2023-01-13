@@ -50,6 +50,10 @@
     height: 10px;
 }
 
+.copyright{
+    padding: 15px;
+}
+
 
 .carousel-caption>p{background-color:#f0f0f000;}
 
