@@ -16,13 +16,13 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -283,7 +283,7 @@
                     <br>
                     <br>
                     On décompte 6 blocs de compétences dans le portfolio du BUT :
-                    <br>
+                    <br><br>
                     <a href="#bloc-realiser" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom"
                         title="Le premier bloc de compétences">
                         Réaliser
@@ -388,7 +388,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne" style="background-color: #212529;">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    data-bs-target="#azulOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
                                     Projet Azul
                                     <span style="color : rgb(73, 39, 174);">
@@ -397,7 +397,7 @@
                                         style="margin-left: 10px;">
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            <div id="azulOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body" class="text-justify text-dark"
                                     style="background-color: #071B2E;">
@@ -424,8 +424,27 @@
                                     <br>
 
                                     <br>
-                                    <video autoplay loop muted src="assets/demoazul.mp4" alt=""
-                                        class="img-thumbnail"></video>
+                                    <video autoplay loop muted src="assets/demoazul.mp4" alt="" controls
+                                        class="img-thumbnail">
+                                    </video>
+                                    <br>
+                                    <br>
+                                    <!-- liens groupe de bouttons -->
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <a href="https://github.com/Berachem/Azul-Game" target="_blank" class="btn"
+                                            style="background-color: white; color: purple;">Github <img
+                                                src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                                width="20" height="20">
+                                        </a>
+                                    
+                                        <a href="https://berachem.dev/Azul-Game/" target="_blank" class="btn"
+                                            style="background-color: white; color: blue; margin-left: 5px;"
+                                            >Site <img
+                                                src="assets/img/site.png" alt="Github" width="20" height="20">
+                                        </a>
+                                    </div>
+                                    
+
 
                                 </div>
                             </div>
@@ -516,15 +535,26 @@
                                 apportées).
                                 <br>
                                 <br>
-                                <video autoplay loop muted src="assets/demoloop.mp4" alt=""
-                                    class="img-thumbnail"></video>
+                                <video autoplay loop muted src="assets/demoloop.mp4" alt="" controls
+                                    class="img-thumbnail">
+                                </video>
                                 <br>
+                                <br>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <a href="https://github.com/Berachem/LoopHero" target="_blank" class="btn"
+                                        style="background-color: white; color: purple;">Github <img
+                                            src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                            width="20" height="20">
+                                    </a>
+                                
+                                    <a href="https://berachem.dev/LoopHero/" target="_blank" class="btn"
+                                        style="background-color: white; color: blue; margin-left: 5px;"
+                                        >Site <img
+                                            src="assets/img/site.png" alt="Github" width="20" height="20">
+                                </a>
+                                </div>
                                 <br>
                             </div>
-
-
-
-
                         </div>
                     </div>
 
@@ -680,19 +710,6 @@
 
                                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
@@ -812,6 +829,7 @@
                     </div>
 
                 </div>
+            </div>
     </section>
 
 
@@ -885,17 +903,17 @@
             <!-- Projet Associé (Thèses.fr) -->
             <h5>Projets associés</h5>
             <br>
-            
+
             <div class="accordion accordion-flush" id="theses" style="background-color: #212529;">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne" style="background-color: #212529;">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            style="background-color: #4E73DF; border-color: white;" data-bs-target="#flush-collapseOne"
+                            style="background-color: #4E73DF; border-color: white;" data-bs-target="#thesesOne"
                             aria-expanded="false" aria-controls="flush-collapseOne">
                             <img src="assets/img/theses_logo.png" alt="" style="width: 150px; height: 50px;">
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    <div id="thesesOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#theses">
                         <div class="accordion-body" style="background-color: #071B2E; color: white;">
                             <h5>Thèses.fr</h5>
@@ -927,8 +945,24 @@
                                         style="width: 30px;">
                                 </a>
                             </p>
+                           
 
                             <img src="assets/img/these.png" alt="" class="img-thumbnail" style="width: 100%;">
+                            <br>
+                            <br>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="https://github.com/Berachem/theses" target="_blank" class="btn"
+                                    style="background-color: white; color: purple;">Github <img
+                                        src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                        width="20" height="20">
+                                </a>
+                            
+                                <a href="https://these.berachem.dev/" target="_blank" class="btn"
+                                    style="background-color: white; color: blue; margin-left: 5px;"
+                                    >Site <img
+                                        src="assets/img/site.png" alt="Github" width="20" height="20">
+                                </a>
+                            </div>
 
                         </div>
                     </div>
@@ -940,11 +974,11 @@
                     <h2 class="accordion-header" id="flush-headingOne" style="background-color: #212529;">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             style="background-color: rgb(45, 44, 44); border-color: white;"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            data-bs-target="#zarzaOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <img src="assets/img/zarza_logo.png" alt="" style="width: 150px; height: 50px;">
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    <div id="zarzaOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#zarza_accordion">
                         <div class="accordion-body" style="background-color: #071B2E; color: white;">
                             <h5>Zarza Ski</h5>
@@ -959,14 +993,19 @@
                                 base de données PostgreSQL pour stocker les données. Il est hébergé sur un
                                 serveur universitaire.</p>
 
-                            <video width="100%" height="auto" controls>
+                            <video autoplay width="100%" height="auto" controls>
                                 <source src="assets/demozarza.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             <br>
-
-                            <a href="https://github.com/Berachem/Ski-Low-Cost" class="btn btn-dark">Voir le code
-                                source</a>
+                            <br>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="https://github.com/Berachem/Ski-Low-Cost" target="_blank" class="btn"
+                                    style="background-color: white; color: purple;">Github <img
+                                        src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                        width="20" height="20">
+                                </a>
+                            </div>
 
 
                         </div>
@@ -1059,14 +1098,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne" style="background-color: #212529;">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            data-bs-target="#kontablOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <h5>
                                 <img src="assets/img/kontabl_logo.png" alt="kontabl" style="width: 150px;">
                             </h5>
                         </button>
                     </h2>
 
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    <div id="kontablOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body" style="background-color: #071B2E; color: white;">
                             <code>
@@ -1116,17 +1155,25 @@
                             les
                             délais impartis.
                             <br><br>
-                            <video width="100%" controls>
+                            <video autoplay width="100%" controls>
                                 <source src="assets/demokontabl.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-                            <br><br>
-                            <!-- <a href="https://kontabl.berachem.dev">kontabl.berachem.dev</a> -->
-                            Disponible sur le lien suivant : <a
-                                href="https://kontabl.berachem.dev">kontabl.berachem.dev</a>
-                            <br><br>
-                            Code source disponible sur le lien suivant : <a
-                                href="https://github.com/berachem/kontabl">kontabl</a>
+                            <br>
+                            <br>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="https://github.com/Berachem/kontabl" target="_blank" class="btn"
+                                    style="background-color: white; color: purple;">Github <img
+                                        src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                        width="20" height="20">
+                                </a>
+                            
+                                <a href="http://arno.cl/rqau" target="_blank" class="btn"
+                                    style="background-color: white; color: blue; margin-left: 5px;"
+                                    >Site <img
+                                        src="assets/img/site.png" alt="Github" width="20" height="20">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1136,8 +1183,9 @@
             <div class="accordion accordion-flush" id="accordionFlushExample" style="background-color: #212529;">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo" style="background-color: #212529;">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" style="background-color: #212529;"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            style="background-color: #212529;" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
                             <h5>
                                 <img src="assets/img/logo_projet_unesco.png" alt="unesco" style="width: 170px;">
                             </h5>
@@ -1156,28 +1204,169 @@
                             technologies telles que HTML, CSS, JavaScript et PHP pour créer un site web attrayant et
                             fonctionnel. Le site web présente les sites remarquables de l'Île de la Cité, tels que
                             Notre-Dame et l'ancien Palais de Justice, et fournit des informations utiles pour les
-                            visiteurs. 
+                            visiteurs.
                             <br><br>
-                            <video width="100%" controls>
+                            <video autoplay width="100%" controls>
                                 <source src="Univ/assets/demounesco.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-                            <br><br>
-                            Vous pouvez visiter le site web à l'adresse suivante :
-                            <a href="http://iledelacite-paris.fr/src/index.php">iledelacite-paris.fr</a>
-                            <br> Vous pouvez également consulter le code source
-                            sur GitHub : <a href="https://github.com/Berachem/IledelaCite_Unesco">IledelaCite_Unesco</a>
-                            <br> Travailler avec l'UNESCO sur ce
+                            <br>
+                            Travailler avec l'UNESCO sur ce
                             projet a été une expérience incroyable et j'ai hâte de travailler sur d'autres projets
                             passionnants dans le futur.
+                            <br><br>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="https://github.com/Berachem/IledelaCite_Unesco" target="_blank" class="btn"
+                                    style="background-color: white; color: purple;">Github <img
+                                        src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                        width="20" height="20">
+                                </a>
+                            
+                                <a href="https://iledelacite.berachem.dev/" target="_blank" class="btn"
+                                    style="background-color: white; color: blue; margin-left: 5px;"
+                                    >Site <img
+                                        src="assets/img/site.png" alt="Github" width="20" height="20">
+                                </a>
+                            </div>
                         </div>
     </section>
 
     <!-- Collaborer -->
     <hr class="m-0" />
-    
+    <section class="resume-section" id="bloc-collaborer">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Bloc 6 : Collaborer</h2>
+            <div class="savoirs">
+                Savoirs-Faire :
+                <span class="badge badge-pill badge-primary">Collaboration dans une équipe
+                    informatique</span>
+                <span class="badge badge-pill badge-primary">Partage de connaissances</span>
+                <span class="badge badge-pill badge-primary">Gestion de conflits</span>
+                <span class="badge badge-pill badge-primary">Identification et évaluation des
+                    compétences des membres de l'équipe</span>
+                <br>
+                Savoir-être :
+                <span class="badge badge-pill badge-info">Esprit d'équipe</span>
+                <span class="badge badge-pill badge-info">Communication efficace</span>
+                <span class="badge badge-pill badge-info">Adaptabilité</span>
+                <span class="badge badge-pill badge-info">Leadership</span>
+                <br>
+                Savoirs :
+                <span class="badge badge-pill badge-danger">Travail en équipe informatique</span>
+                <span class="badge badge-pill badge-danger">Partage des connaissances en équipe
+                    informatique</span>
+                <span class="badge badge-pill badge-danger">Gestion des conflits en équipe
+                    informatique</span>
+                <span class="badge badge-pill badge-danger">Leadership en équipe informatique</span>
+            </div>
+            <br><br>
 
-    
+            Pendant mes études en informatique, j'ai eu la chance de travailler sur plusieurs projets en
+            équipe, ce
+            qui m'a permis d'acquérir des compétences en collaboration dans une équipe informatique. J'ai
+            appris
+            à travailler efficacement avec des personnes ayant des compétences différentes des miennes et à
+            partager mes connaissances avec elles.
+            <br><br>
+            Travailler en équipe peut parfois être difficile, car il peut y avoir des conflits entre les
+            membres
+            de l'équipe. J'ai appris à gérer ces conflits en écoutant les différentes opinions et en
+            trouvant des
+            solutions qui conviennent à tous les membres de l'équipe. J'ai également appris à identifier et
+            évaluer les compétences des membres de l'équipe afin de mieux répartir les tâches et de
+            maximiser
+            l'efficacité de l'équipe.
+            <br><br>
+            En travaillant en équipe, j'ai également développé des compétences en communication efficace.
+            J'ai
+            appris à exprimer mes idées clairement et à écouter les opinions des autres membres de l'équipe.
+            J'ai également appris à être adaptable en m'adaptant aux différents styles de travail des autres
+            membres
+            de l'équipe. Enfin, j'ai appris à être un leader en équipe en motivant les membres de l'équipe
+            à
+            travailler ensemble pour atteindre les objectifs du projet.
+            <br><br>
+            En résumé, grâce à mes expériences en travaillant sur des projets en équipe, j'ai acquis des
+            compétences précieuses en collaboration dans une équipe informatique, en partage de
+            connaissances et en gestion de conflits.
+            <br><br>
+            <h5>Projets associés</h5>
+            <br>
+
+            <div class="accordion" id="graphe">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#grapheOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <img src="assets/img/graphe_projet.png" alt="icone-1" width="50px" height="50px">
+                            Graphes et algorithmes
+                        </button>
+                    </h2>
+                    <div id="grapheOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-parent="#graphe">
+                        <div class="accordion-body" style="background-color: #071B2E; color: white;">
+                            <code>avec Nidal IDRISSI</code>
+                            <br>
+                            Le projet de mise en place d'algorithmes sur les graphes en binôme implique une
+                            collaboration étroite entre les deux membres de l'équipe informatique, et une maîtrise des
+                            compétences requises pour travailler efficacement en équipe, ainsi que des compétences en
+                            programmation en Python pour implémenter les algorithmes.
+                            <br><br>
+                            Dans un premier temps, les membres de l'équipe doivent acquérir une connaissance théorique
+                            solide des algorithmes sur les graphes, tels que le BMC et la déterminisation. Ils doivent
+                            également comprendre les avantages et les inconvénients de chaque algorithme, afin de
+                            pouvoir choisir le plus adapté à chaque situation.
+                            <br><br>
+                            Ensuite, les membres de l'équipe doivent être capables de travailler ensemble pour mettre en
+                            place les algorithmes en Python. Cela implique de bien comprendre les concepts de base de la
+                            programmation Python, tels que les fonctions, les classes et les bibliothèques, ainsi que
+                            les concepts spécifiques à la mise en œuvre des algorithmes sur les graphes.
+                            <br><br>
+                            La collaboration est également essentielle pour la résolution des problèmes rencontrés lors
+                            de la mise en place des algorithmes. Les membres de l'équipe doivent être en mesure de
+                            communiquer efficacement pour identifier les problèmes et trouver des solutions.
+                            <br><br>
+                            Enfin, une fois que les algorithmes ont été implémentés en Python, les membres de l'équipe
+                            doivent être en mesure de les tester pour s'assurer qu'ils fonctionnent correctement. Cela
+                            nécessite des compétences en matière de test logiciel, ainsi que la capacité de travailler
+                            ensemble pour trouver et corriger les erreurs.
+                            <br><br>
+                            En somme, la réalisation de ce projet de mise en place d'algorithmes sur les graphes en
+                            binôme en Python nécessite des compétences en programmation et en collaboration. Les membres
+                            de l'équipe doivent être capables d'acquérir, de développer et d'exploiter ces compétences
+                            pour travailler efficacement ensemble et mettre en place les algorithmes sur les graphes
+                            avec succès.
+                            <br><br>
+                            <video autoplay width="100%" height="100%" controls>
+                                <source src="assets/demographes.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <br>
+                            <br>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="https://github.com/Berachem/AlgorithmesGraphesAutomates" target="_blank" class="btn"
+                                    style="background-color: white; color: purple;">Github <img
+                                        src="assets/img/768px-Github-desktop-logo-symbol.svg.png" alt="Github"
+                                        width="20" height="20">
+                                </a>
+                            
+                                <a href="http://berachem.dev/AlgorithmesGraphesAutomates/" target="_blank" class="btn"
+                                    style="background-color: white; color: blue; margin-left: 5px;"
+                                    >Site <img
+                                        src="assets/img/site.png" alt="Github" width="20" height="20">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </section>
+     
 
 
 
@@ -1198,52 +1387,61 @@
 
 
 
-    <!-- OTHER-->
-    <img src="assets/img/gotop.png" alt="go Top" onclick='topFunction()' id='goTop'>
 
 
-    <style>
-        #goTop {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Fixed/sticky position */
-            bottom: 20px;
-            /* Place the button at the bottom of the page */
-            right: 30px;
-            /* Place the button 30px from the right */
-            z-index: 99;
-            /* Make sure it does not overlap */
-            border: none;
-            /* Remove borders */
-            outline: none;
-            /* Remove outline */
-            border-radius: 35%;
-            width: 50px;
-        }
-
-        #goTop:hover {
-            background-color: rgba(5, 5, 212, 0.815);
-            /* Add a dark-grey background on hover */
-        }
-    </style>
 
 
-    <footer>
-        <p class="copyright"> <b> &copy;</b> Fait avec <img class="rota" src="assets/img/coeur.png" alt="Coeur"
-                width="20" height="20"> par Berachem MARKRIA
-            <!-- <a href="Portfolio_Universitaire/index.html">(Version Scolaire)</a>-->
-        </p>
-    </footer>
-    </div>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+
+
+
+            <!-- OTHER-->
+            <img src="assets/img/gotop.png" alt="go Top" onclick='topFunction()' id='goTop'>
+
+
+            <style>
+                #goTop {
+                    display: none;
+                    /* Hidden by default */
+                    position: fixed;
+                    /* Fixed/sticky position */
+                    bottom: 20px;
+                    /* Place the button at the bottom of the page */
+                    right: 30px;
+                    /* Place the button 30px from the right */
+                    z-index: 99;
+                    /* Make sure it does not overlap */
+                    border: none;
+                    /* Remove borders */
+                    outline: none;
+                    /* Remove outline */
+                    border-radius: 35%;
+                    width: 50px;
+                }
+
+                #goTop:hover {
+                    background-color: rgba(5, 5, 212, 0.815);
+                    /* Add a dark-grey background on hover */
+                }
+            </style>
+
+
+            <footer>
+                <p class="copyright"> <b> &copy;</b> Fait avec <img class="rota" src="assets/img/coeur.png" alt="Coeur"
+                        width="20" height="20"> par Berachem MARKRIA
+                    <!-- <a href="Portfolio_Universitaire/index.html">(Version Scolaire)</a>-->
+                </p>
+            </footer>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
