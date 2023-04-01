@@ -340,7 +340,6 @@
             <h2 class="mb-5">Bloc 1 : Réaliser</h2>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h4>Partir des exigences et aller jusqu'à une application complète</h4>
                     <div class="savoirs">
                         Savoir-Faire :
                         <span class="badge badge-pill badge-primary">Segmenter le code</span>
@@ -384,22 +383,22 @@
                     <br>
 
                     <!-- Projet Azul -->
-                    <div class="accordion accordion-flush" id="accordionFlushExample"
+                    <div class="accordion accordion-flush" id="python"
                         style="background-color: #212529;">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne" style="background-color: #212529;">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#azulOne" aria-expanded="false"
+                                    data-bs-target="#azulOne" aria-expanded="false" style ="background-color: #F1B91E; border-color: #062B51; color: white;"
                                     aria-controls="flush-collapseOne">
                                     Projet Azul
-                                    <span style="color : rgb(73, 39, 174);">
+                                    <span style="color : rgb(151, 119, 246);">
                                         : Jeu de plateau </span>
                                     <img src="assets/img/python.svg" alt="Python" width="50" height="50"
                                         style="margin-left: 10px;">
                                 </button>
                             </h2>
                             <div id="azulOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                aria-labelledby="flush-headingOne" data-bs-parent="#python">
                                 <div class="accordion-body" class="text-justify text-dark"
                                     style="background-color: #071B2E;">
                                     <code>Avec Tristan MARTINEZ</code>
@@ -457,7 +456,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo" style="background-color: #212529;">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" style ="background-color: #777EF7; border-color: #062B51; color: white;"
                                 aria-controls="flush-collapseTwo">
                                 Projet Loop Hero
                                 <span style="color : rgb(255, 180, 0);">
@@ -558,12 +557,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <br>
-                    <br>
-
-                    <!-- Semestre 3 -->
-
 
 
                 </div>
@@ -832,6 +825,89 @@
 
                 </div>
             </div>
+            <br>
+
+            <div class="accordion" id="firewall">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" style="background-color: #000102; color: white;" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <img src="assets/img/firewall-logo.png" alt="" style="width: 50px; height: 50px;">
+                            : Réaliser un pare-feu sous Linux grâce à Netfilter et Mettre en place une passerelle NAT
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-parent="#firewall">
+                        <div class="accordion-body" style="background-color: #071B2E; color: white;">
+                            <code>avec Valentin MOTUEL</code>
+                            <p>Ce projet avait pour but de mettre en place un pare-feu sous Linux en utilisant Netfilter, le
+                                module de filtrage de paquets intégré dans le noyau Linux. Nous avons également mis en place
+                                une passerelle NAT afin de permettre aux machines du réseau local d'accéder à Internet.</p>
+                            <p>Le pare-feu a été configuré pour filtrer les paquets en fonction de règles prédéfinies. Les
+                                règles ont permis de contrôler l'accès aux services du réseau, de bloquer les paquets
+                                indésirables, de limiter le nombre de connexions simultanées, etc.</p>
+                            <p>Nous avons également mis en place une passerelle NAT pour permettre aux machines du réseau
+                                local d'accéder à Internet en utilisant l'adresse IP publique de la passerelle. La passerelle
+                                NAT a été configurée pour traduire les adresses IP privées du réseau local en une adresse IP
+                                publique.</p>
+                                <h6>Schéma</h6>
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <img src="assets/img/firewall-diag.jpg" alt="" class="img-thumbnail">
+                                        <!-- schéma firewall-->
+                                        <p class="text-center">Schéma du pare-feu</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="assets/img/nat_schema.png"
+                                            alt="" class="img-thumbnail">
+                                            <!-- schéma nat-->
+                                            <p class="text-center">Schéma de la passerelle NAT</p>
+                                    </div>
+
+                                </div>
+                                <br>
+                                <h6>Configuration de Netfilter</h6>
+                                <p>Pour configurer Netfilter, nous avons utilisé les outils de la suite iptables. Les règles
+                                    de filtrage ont été définies en fonction des besoins spécifiques du réseau.</p>
+                                <p>Par exemple, pour autoriser l'accès SSH depuis le réseau local vers le pare-feu, nous
+                                    avons ajouté la règle suivante :</p>
+                                <code>
+                                    iptables -A INPUT -i eth0 -p tcp --dport 22 -j ACCEPT</code>
+                                <p>La commande ci-dessus a permis d'ajouter une règle à la chaîne INPUT du filtre de
+                                    paquets. La règle a autorisé les paquets TCP entrants sur le port 22 (SSH) sur
+                                    l'interface eth0.</p>
+                    
+                                <h6>Configuration de la passerelle NAT</h6>
+                                <p>Pour configurer la passerelle NAT, nous avons utilisé la commande iptables avec l'option
+                                    -t nat. Nous avons également activé l'option de redirection de port dans le noyau Linux.</p>
+                                <p>Par exemple, pour configurer la passerelle NAT pour les adresses IP privées du réseau local
+                                    192.168.1.0/24, nous avons ajouté les règles suivantes :</p>
+                                <code>iptables -t nat -A POSTROUTING -s 192.168.1. 0/24 -o eth0 -j MASQUERADE</code>
+                                <code>echo 1 > /proc/sys/net/ipv4/ip_forward</code>
+                                <br>
+                                <br>
+                                <h6>Représentations de mise en place</h6>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/rules_firewall.jpg" alt="" class="img-thumbnail">
+                                        <p class="text-center">Règles du pare-feu</p>
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="assets/img/nat.png" alt="" class="img-thumbnail">
+                                        <p class="text-center">Passerelle NAT</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
     </section>
 
 
