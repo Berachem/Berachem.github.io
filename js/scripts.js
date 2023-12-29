@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+    
 });
 $(document).on("scroll", function(){
     var pixels = $(document).scrollTop();
