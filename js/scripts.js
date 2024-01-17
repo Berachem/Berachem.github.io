@@ -30,6 +30,18 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    // Obtenez l'élément actif
+    var activeItem = $('.carousel-item.active');
+
+    // Trouvez la vidéo à l'intérieur de l'élément actif
+    var activeVideo = activeItem.find('video');
+
+    // Vérifiez si une vidéo existe dans l'élément actif
+    if (activeVideo.length > 0) {
+        // Lancez la vidéo de l'élément actif
+        activeVideo.get(0).play();
+      }
     
 });
 $(document).on("scroll", function(){
@@ -67,5 +79,28 @@ function topFunction() {
 }
 /* play video twice as fast */
 document.querySelector('video').playbackRate = 3;
+
+
+$(document).ready(function() {
+    // Écoutez l'événement 'slid.bs.carousel' de Bootstrap pour détecter le changement d'item actif
+    $('.carousel').on('slid.bs.carousel', function() {
+      // Pausez toutes les vidéos
+      $('video').each(function() {
+        this.pause();
+      });
+
+      // Obtenez l'élément actif
+      var activeItem = $('.carousel-item.active');
+
+      // Trouvez la vidéo à l'intérieur de l'élément actif
+      var activeVideo = activeItem.find('video');
+
+      // Vérifiez si une vidéo existe dans l'élément actif
+      if (activeVideo.length > 0) {
+        // Lancez la vidéo de l'élément actif
+        activeVideo.get(0).play();
+      }
+    });
+  });
 
 
