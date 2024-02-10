@@ -1,40 +1,40 @@
 {
     "projets": [
       {
-        "nom": "Site Web en partenariat avec l'UNESCO sur l'Île de la Cité",
+        "nom": "Île de la Cité, Paris 🏛️🌍",
         "description": "Conception d'un Site Web pour participer à la valorisation d'un patrimoine mondial en partenariat avec l'UNESCO : l'Ile de la Cité à Paris (Notre Dame, l'ancien Palais de Justice...)",
         "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
         "lienGitHub": "https://github.com/Berachem/IledelaCite_Unesco",
         "lienSiteWeb": "http://iledelacite-paris.fr/src/index.php",
         "lienUNESCO": "https://www.unesco.org/fr",
-        "media": "assets/img/ilecite.png"
+        "media": "https://berachem.dev/assets/img/ilecite.png"
       },
       {
-        "nom": "Platforme de jeu en ligne - ZOO-GGLE",
+        "nom": "Zoo-ggle 🦁",
         "description": "Plateforme de jeu en ligne permettant de trouver le plus de mots possible en utilisant les lettres du plateau de jeu. Le jeu est jouable en solo ou en multijoueur.",
         "technologies": ["React", "TypeScript", "PHP", "MySQL", "C", "Java", "Python"],
         "lienRapport": "https://docs.google.com/document/d/1HvlYzxMcQ87QlavMk3Z_jaXWTemJKZzu9LXvUgGAL3Y/edit?usp=sharing",
-        "media": "assets/img/zoo_ggle_landing.png"
+        "media": "https://berachem.dev/assets/img/zoo_ggle_landing.png"
       },
       {
-        "nom": "Projet Python Azul",
+        "nom": "Azul Game (IA 🤖)",
         "description": "Implémentation du jeu \"Azul\" en Python grâce à la librairie \"Tkinter\". Intégration d'un système de sauvegarde de partie et d'une IA capable de jouer à différents niveaux (Partie Difficile, Facile, rapide, longue).",
         "technologies": ["Python", "Tkinter"],
         "lienGitHub": "https://github.com/Berachem/Azul-Game",
         "lienSiteWeb": "https://berachem.dev/Azul-Game/",
-        "media": "assets/demoazul.mp4"
+        "media": "https://berachem.dev/assets/demoazul.mp4"
       },
       {
-        "nom": "Projet KONTABL",
+        "nom": "Kontabl 💰",
         "description": "Conception d'un Site Web pour la consultation des comptes de commerçants. Projet universitaire visant à créer un portail Web dédié à la consultation des comptes des clients, entreprises ou commerçants.",
         "technologies": ["PHP", "MySQL"],
         "lienGitHub": "https://github.com/Berachem/kontabl",
         "lienSiteWeb": "https://kontabl.berachem.dev/#/login",
         "lienRapport": "https://drive.google.com/drive/folders/1MlSPmzLcCJm4KJoZTvuvrkUGpMf7DZQX?usp=sharing",
-        "media": "assets/demokontabl.mp4"
+        "media": "https://berachem.dev/assets/demokontabl.mp4"
       },
       {
-        "nom": "Projet GIG-Bot",
+        "nom": "Robot GIG-Bot 🚓🤖",
         "description": "Conception d'un robot éclaireur en assembleur. Le robot se déplace, clignote, rencontre des obstacles et les évite grâce à des bumper sensors, LEDs, moteurs et des boutons.",
         "technologies": ["Assembleur"],
         "lienSiteWeb": "https://berachem.dev/eval-bot/",
@@ -42,47 +42,47 @@
         "media": "https://igadvisory.fr/opendata/Demo_GIG-Bot.mp4"
       },
       {
-        "nom": "Projet Thèses",
+        "nom": "Thèses 📚",
         "description": "Conception d'un site Web répertoriant toutes les thèses soutenues en France depuis 1985. Le site permet d'effectuer des recherches avec des graphiques et statistiques en fonction des critères de recherche.",
         "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Python"],
         "lienSiteWeb": "https://these.berachem.dev/",
         "lienDataGouv": "https://www.data.gouv.fr/fr/datasets/theses-soutenues-en-france-depuis-1985/",
-        "media": "assets/img/these.png"
+        "media": "https://berachem.dev/assets/img/these.png"
       },
       {
-        "nom": "Projet Eco-tidien",
+        "nom": "App Eco-tidien 🌱",
         "description": "Maquettage d'une application mobile pour l'écologie : Eco-tidien. Une application qui guide dans les choix quotidiens pour le bien de l'écologie et de la planète.",
         "technologies": ["Figma"],
         "lienFigma": "https://www.figma.com/file/xyfRBtg92TrSd98cwKN750/Eco-tidien?node-id=0%3A1",
         "lienRapport": "https://drive.google.com/file/d/1D9wPyUApHtgXigsubJyvIEHDy02rnfgS/view?usp=sharing",
-        "media": "assets/demoeco.mp4"
+        "media": "https://berachem.dev/assets/demoeco.mp4"
       },
       {
-        "nom": "Projet Hôtel",
+        "nom": "Back Office Hotel-Ski ⛷️",
         "description": "Conception d'un site Web pour un hôtel dans une station de ski. Le site, couplé à une base de données sous PostgreSQL, permet de gérer les réservations des clients et les besoins du manager de l'hôtel.",
         "technologies": ["PHP", "MySQL", "PostgreSQL"],
         "lienGitHub": "https://github.com/Berachem/Ski-Low-Cost",
         "lienSiteWeb": "https://perso-etudiant.u-pem.fr/~berachem.markria/Ski/",
         "lienRapport": "https://drive.google.com/file/d/1Oj4rOfNvkFu8jdusTCdNx7rJVqq2cyIN/view?usp=sharing",
-        "media": "assets/demozarza.mp4"
+        "media": "https://berachem.dev/assets/demozarza.mp4"
       },
       {
-        "nom": "Projet Loop Hero",
+        "nom": "Loop-Hero Game ⚔️",
         "description": "Conception d'un jeu Roguelike, Deck-building nommé Loop Hero. Le jeu est réalisé en JAVA, où un Héros est bloqué dans une boucle temporelle et affronte des monstres pour survivre.",
         "technologies": ["Java"],
         "lienGitHub": "https://github.com/Berachem/LoopHero",
         "lienSiteWeb": "https://berachem.dev/LoopHero/",
-        "media": "assets/demoloop.mp4"
+        "media": "https://berachem.dev/assets/demoloop.mp4"
       },
       {
-        "nom": "Projet Casino",
+        "nom": "Stratégie de la Martingale (Casino) 🎲",
         "description": "Aide à la mise au Casino avec la stratégie de la Martingale. Implémentation d'un programme indiquant la somme de départ à miser selon une certaine marge d'échecs à la roulette et un total disponible.",
         "technologies": ["Python"],
         "lienGitHub": "https://github.com/Berachem/Strategie-maths-casino",
-        "media": "assets/img/martingale.jpg"
+        "media": "https://berachem.dev/assets/img/martingale.jpg"
       },
       {
-        "nom": "Projet Graphes",
+        "nom": "Algorithmes Graphes avancés 🌶️",
         "description": "Conception d'algorithmes en Python en lien avec la Théorie des graphes. Implémentation de fonctions telles que la déterminisation, complémentation, minimisation, etc., en collaboration avec Nidal IDRISSI.",
         "technologies": ["Python"],
         "lienGitHub": "https://github.com/Berachem/AlgorithmesGraphesAutomates",
@@ -94,98 +94,98 @@
     "langagesDeProgrammation": [
         {
           "nom": "React",
-          "icone": "assets/img/React.png",
+          "icone": "https://berachem.dev/assets/img/React.png",
           "largeur": 50,
           "hauteur": 45,
           "tooltip": "React 🌟"
         },
         {
           "nom": "Typescript",
-          "icone": "assets/img/Typescript_logo_2020.svg.png",
+          "icone": "https://berachem.dev/assets/img/Typescript_logo_2020.svg.png",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Typescript"
         },
         {
           "nom": "Flutter",
-          "icone": "assets/img/flutter_logo.png",
+          "icone": "https://berachem.dev/assets/img/flutter_logo.png",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Flutter"
         },
         {
           "nom": "Symfony",
-          "icone": "assets/img/symfony.png",
+          "icone": "https://berachem.dev/assets/img/symfony.png",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Symfony"
         },
         {
           "nom": "Python",
-          "icone": "assets/img/python.svg",
+          "icone": "https://berachem.dev/assets/img/python.svg",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "❤️ Python"
         },
         {
           "nom": "HTML5",
-          "icone": "assets/img/html.svg",
+          "icone": "https://berachem.dev/assets/img/html.svg",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "HTML5"
         },
         {
           "nom": "CSS3",
-          "icone": "assets/img/css3.svg",
+          "icone": "https://berachem.dev/assets/img/css3.svg",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "CSS3"
         },
         {
           "nom": "Javascript",
-          "icone": "assets/img/javascript.svg",
+          "icone": "https://berachem.dev/assets/img/javascript.svg",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Javascript"
         },
         {
           "nom": "PHP",
-          "icone": "assets/img/PHP-logo.svg.png",
+          "icone": "https://berachem.dev/assets/img/PHP-logo.svg.png",
           "largeur": 70,
           "hauteur": 50,
           "tooltip": "PHP"
         },
         {
           "nom": "C#",
-          "icone": "assets/img/csharp.png",
+          "icone": "https://berachem.dev/assets/img/csharp.png",
           "largeur": 40,
           "hauteur": 45,
           "tooltip": "C#"
         },
         {
           "nom": "Java",
-          "icone": "assets/img/java.svg",
+          "icone": "https://berachem.dev/assets/img/java.svg",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Java"
         },
         {
           "nom": "C",
-          "icone": "assets/img/c.svg",
+          "icone": "https://berachem.dev/assets/img/c.svg",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "C"
         },
         {
           "nom": "Bash",
-          "icone": "assets/img/bash.png",
+          "icone": "https://berachem.dev/assets/img/bash.png",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Bash"
         },
         {
           "nom": "Lua",
-          "icone": "assets/img/Lua-Logo.png",
+          "icone": "https://berachem.dev/assets/img/Lua-Logo.png",
           "largeur": 50,
           "hauteur": 50,
           "tooltip": "Lua"
@@ -194,49 +194,49 @@
     "systèmesEtLogiciels": [
     {
         "nom": "MySQL",
-        "icone": "assets/img/mysql.svg",
+        "icone": "https://berachem.dev/assets/img/mysql.svg",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "MySQL"
     },
     {
         "nom": "PostgreSQL",
-        "icone": "assets/img/Postgresql_elephant.svg.png",
+        "icone": "https://berachem.dev/assets/img/Postgresql_elephant.svg.png",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "PostgreSQL"
     },
     {
         "nom": "Bootstrap",
-        "icone": "assets/img/bootstrap.svg",
+        "icone": "https://berachem.dev/assets/img/bootstrap.svg",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Bootstrap"
     },
     {
         "nom": "Visual Studio Code",
-        "icone": "assets/img/visual-studio-code.svg",
+        "icone": "https://berachem.dev/assets/img/visual-studio-code.svg",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Visual Studio Code"
     },
     {
         "nom": "Android Studio",
-        "icone": "assets/img/android_studio_logo.png",
+        "icone": "https://berachem.dev/assets/img/android_studio_logo.png",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Android Studio"
     },
     {
         "nom": "Postman",
-        "icone": "assets/img/postman-icon.png",
+        "icone": "https://berachem.dev/assets/img/postman-icon.png",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Postman"
     },
     {
         "nom": "Linux",
-        "icone": "assets/img/linux.svg",
+        "icone": "https://berachem.dev/assets/img/linux.svg",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Linux"
@@ -250,49 +250,49 @@
     },
     {
         "nom": "Github",
-        "icone": "assets/img/768px-Github-desktop-logo-symbol.svg.png",
+        "icone": "https://berachem.dev/assets/img/768px-Github-desktop-logo-symbol.svg.png",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Github"
     },
     {
         "nom": "Git",
-        "icone": "assets/img/git.png",
+        "icone": "https://berachem.dev/assets/img/git.png",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Git"
     },
     {
         "nom": "Eclipse",
-        "icone": "assets/img/eclipse.svg",
+        "icone": "https://berachem.dev/assets/img/eclipse.svg",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Eclipse"
     },
     {
         "nom": "Suite Office",
-        "icone": "assets/img/Microsoft_Office_logo_(2013–2019).svg.png",
+        "icone": "https://berachem.dev/assets/img/Microsoft_Office_logo_(2013–2019).svg.png",
         "largeur": 40,
         "hauteur": 50,
         "tooltip": "Suite Office"
     },
     {
         "nom": "Drive",
-        "icone": "assets/img/drive.png",
+        "icone": "https://berachem.dev/assets/img/drive.png",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Drive"
     },
     {
         "nom": "Figma",
-        "icone": "assets/img/Figma-logo.svg",
+        "icone": "https://berachem.dev/assets/img/Figma-logo.svg",
         "largeur": 50,
         "hauteur": 50,
         "tooltip": "Figma"
     },
     {
         "nom": "Assembleur",
-        "icone": "assets/img/assembly.png",
+        "icone": "https://berachem.dev/assets/img/assembly.png",
         "largeur": 70,
         "hauteur": 70,
         "tooltip": "Assembleur"
