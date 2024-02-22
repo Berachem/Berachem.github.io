@@ -70,6 +70,41 @@
     }
 }
 
+.marque-card{
+    background-color: rgb(255, 255, 255);
+}
+
+.marquee-container {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    width: calc(100% * 2); /* Ajustez selon le nombre d'images et leur duplication */
+    animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee img {
+    height: 100px; /* Exemple de hauteur fixe */
+    width: auto; /* Conserve les proportions de l'image */
+    margin-left: 5vh;
+}
+
+.marquee-container {
+    height: 120px; /* Ajustez cette valeur selon la hauteur nécessaire */
+}
+.marquee {
+    align-items: center; /* Déjà présent dans votre code pour alignement vertical */
+}
+
+
+
 
 .carousel-caption>p{background-color:#f0f0f000;}
 
