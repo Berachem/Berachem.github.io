@@ -19,10 +19,10 @@
       "media": "https://berachem.dev/assets/img/zoo_ggle_landing.png"
     },
     {
-      "nom": "Azul Game (IA 🤖)",
+      "nom": "Azul Game (IA)",
       "descriptionCourte": "Jeu de plateau Azul avec une IA intégrée",
       "description": "Implémentation du jeu \"Azul\" en Python grâce à la librairie \"Tkinter\". Intégration d'un système de sauvegarde de partie et d'une IA capable de jouer à différents niveaux (Partie Difficile, Facile, rapide, longue).",
-      "technologies": ["Python", "Tkinter"],
+      "technologies": ["Python", "Tkinter", "IA"],
       "lienGitHub": "https://github.com/Berachem/Azul-Game",
       "lienSiteWeb": "https://berachem.dev/Azul-Game/",
       "media": "https://berachem.dev/assets/demoazul.mp4"
@@ -65,13 +65,43 @@
       "media": "https://berachem.dev/assets/demoeco.mp4"
     },
     {
-      "nom": "Loop-Hero Game ⚔️",
+      "nom": "Loop-Hero ⚔️🔁",
       "descriptionCourte": "Jeu Roguelike, Deck-building : un Héros bloqué dans une boucle temporelle",
       "description": "Conception d'un jeu Roguelike, Deck-building nommé Loop Hero. Le jeu est réalisé en JAVA, où un Héros est bloqué dans une boucle temporelle et affronte des monstres pour survivre.",
       "technologies": ["Java"],
       "lienGitHub": "https://github.com/Berachem/LoopHero",
       "lienSiteWeb": "https://berachem.dev/LoopHero/",
       "media": "https://berachem.dev/assets/demoloop.mp4"
+    },
+    {
+      "nom": "Croisade 🔴⚔️🟢⚔️🔵 (IA)",
+      "descriptionCourte": "Jeu de stratégie avec des factions et IA (algorithmes de plus court chemin)",
+      "description": "Conception d'un jeu de stratégie avec des factions et des algorithmes de plus court chemin. Trois factions (🔴, 🟢, 🔵) s'affrontent, chacune avec une stratégie et une cible particulières.",
+      "technologies": ["Python", "IA"],
+      "lienGitHub": "https://github.com/Berachem/Croisade",
+      "lienSiteWeb": "https://berachem.dev/Croisade/",
+      "lienRapport": "",
+      "media": "https://igadvisory.fr/opendata/Croisade_Trailer.mp4"
+    },
+    {
+      "nom": "Save The Cats",
+      "descriptionCourte": "Jeu de sauvetage de chats dans des villages en feu avec des niveaux variés.",
+      "description": "Vous incarnez un héros dédié au sauvetage de chats égarés dans des villages en proie aux flammes. Votre mission est de localiser ces félins et de les transporter en toute sécurité vers la SafeZone, le tout en visant le temps le plus court possible.",
+      "technologies": ["Unity", "C#"],
+      "lienGitHub": "https://github.com/Berachem/SaveTheCats",
+      "lienSiteWeb": "",
+      "lienRapport": "https://berachem-dev.notion.site/Infographie-3D-compte-rendu-PROJET-SaveTheCats-67c0f6d324fb483a899adb5af8a88c0e",
+      "media": "https://igadvisory.fr/opendata/SaveTheCats/assets/saveTheCatsDemo.mp4"
+    },
+    {
+      "nom": "Space Invaders 👾",
+      "descriptionCourte": "Jeu de Space Invaders en C# avec fonctionnalités multijoueur et boss final.",
+      "description": "Ce projet en C# consiste à développer le célèbre jeu Space Invaders, un classique de l'arcade où le joueur contrôle un vaisseau spatial afin de défendre la Terre contre une invasion extraterrestre. Le projet inclut des fonctionnalités multijoueur, des éléments de décoration visuelle, des sons, des bonus, un boss final et un leaderboard de fin de partie.",
+      "technologies": ["C#"],
+      "lienGitHub": "https://github.com/Berachem/space-invaders",
+      "lienSiteWeb": "https://berachem.dev/space-invaders/",
+      "lienRapport": "https://github.com/Berachem/space-invaders/blob/main/Rapport_Space_Invaders.pdf",
+      "media": "https://igadvisory.fr/opendata/spaceInvaders/space_invader_demo.mp4"
     },
     {
       "nom": "Stratégie de la Martingale (Casino) 🎲",
@@ -108,36 +138,6 @@
       "lienSiteWeb": "https://perso-etudiant.u-pem.fr/~berachem.markria/Ski/",
       "lienRapport": "https://drive.google.com/file/d/1Oj4rOfNvkFu8jdusTCdNx7rJVqq2cyIN/view?usp=sharing",
       "media": "https://berachem.dev/assets/demozarza.mp4"
-    },
-    {
-      "nom": "Croisade 🔴⚔️🟢⚔️🔵",
-      "descriptionCourte": "Jeu de stratégie avec des factions et IA (algorithmes de plus court chemin)",
-      "description": "Conception d'un jeu de stratégie avec des factions et des algorithmes de plus court chemin. Trois factions (🔴, 🟢, 🔵) s'affrontent, chacune avec une stratégie et une cible particulières.",
-      "technologies": ["Python"],
-      "lienGitHub": "https://github.com/Berachem/Croisade",
-      "lienSiteWeb": "https://berachem.dev/Croisade/",
-      "lienRapport": "",
-      "media": "https://igadvisory.fr/opendata/Croisade_Trailer.mp4"
-    },
-    {
-      "nom": "Save The Cats",
-      "descriptionCourte": "Jeu de sauvetage de chats dans des villages en feu avec des niveaux variés.",
-      "description": "Vous incarnez un héros dédié au sauvetage de chats égarés dans des villages en proie aux flammes. Votre mission est de localiser ces félins et de les transporter en toute sécurité vers la SafeZone, le tout en visant le temps le plus court possible.",
-      "technologies": ["Unity", "C#"],
-      "lienGitHub": "https://github.com/Berachem/SaveTheCats",
-      "lienSiteWeb": "",
-      "lienRapport": "https://berachem-dev.notion.site/Infographie-3D-compte-rendu-PROJET-SaveTheCats-67c0f6d324fb483a899adb5af8a88c0e",
-      "media": "https://igadvisory.fr/opendata/SaveTheCats/assets/saveTheCatsDemo.mp4"
-    },
-    {
-      "nom": "Space Invaders 👾",
-      "descriptionCourte": "Jeu de Space Invaders en C# avec fonctionnalités multijoueur et boss final.",
-      "description": "Ce projet en C# consiste à développer le célèbre jeu Space Invaders, un classique de l'arcade où le joueur contrôle un vaisseau spatial afin de défendre la Terre contre une invasion extraterrestre. Le projet inclut des fonctionnalités multijoueur, des éléments de décoration visuelle, des sons, des bonus, un boss final et un leaderboard de fin de partie.",
-      "technologies": ["C#"],
-      "lienGitHub": "https://github.com/Berachem/space-invaders",
-      "lienSiteWeb": "https://berachem.dev/space-invaders/",
-      "lienRapport": "https://github.com/Berachem/space-invaders/blob/main/Rapport_Space_Invaders.pdf",
-      "media": "https://igadvisory.fr/opendata/spaceInvaders/space_invader_demo.mp4"
     }
     
 
@@ -247,6 +247,13 @@
       "largeur": 50,
       "hauteur": 50,
       "tooltip": "Lua"
+    },
+    {
+      "nom": "IA",
+      "icone": "https://berachem.dev/assets/img/ia.png",
+      "largeur": 50,
+      "hauteur": 50,
+      "tooltip": "IA"
     }
   ],
   "outils": [
