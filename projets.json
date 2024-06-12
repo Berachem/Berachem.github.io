@@ -52,7 +52,7 @@
       "description": "Conception d'un site Web répertoriant toutes les thèses soutenues en France depuis 1985. Le site permet d'effectuer des recherches avec des graphiques et statistiques en fonction des critères de recherche.",
       "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Python"],
       "lienSiteWeb": "https://these.berachem.dev/",
-      "lienDataGouv": "https://www.data.gouv.fr/fr/datasets/theses-soutenues-en-france-depuis-1985/",
+      "lienRapport": "https://www.data.gouv.fr/fr/datasets/theses-soutenues-en-france-depuis-1985/",
       "media": "https://berachem.dev/assets/img/these.png"
     },
     {
@@ -108,7 +108,38 @@
       "lienSiteWeb": "https://perso-etudiant.u-pem.fr/~berachem.markria/Ski/",
       "lienRapport": "https://drive.google.com/file/d/1Oj4rOfNvkFu8jdusTCdNx7rJVqq2cyIN/view?usp=sharing",
       "media": "https://berachem.dev/assets/demozarza.mp4"
+    },
+    {
+      "nom": "Croisade 🔴⚔️🟢⚔️🔵",
+      "descriptionCourte": "Jeu de stratégie avec des factions et IA (algorithmes de plus court chemin)",
+      "description": "Conception d'un jeu de stratégie avec des factions et des algorithmes de plus court chemin. Trois factions (🔴, 🟢, 🔵) s'affrontent, chacune avec une stratégie et une cible particulières.",
+      "technologies": ["Python"],
+      "lienGitHub": "https://github.com/Berachem/Croisade",
+      "lienSiteWeb": "https://berachem.dev/Croisade/",
+      "lienRapport": "",
+      "media": "https://igadvisory.fr/opendata/Croisade_Trailer.mp4"
+    },
+    {
+      "nom": "Save The Cats",
+      "descriptionCourte": "Jeu de sauvetage de chats dans des villages en feu avec des niveaux variés.",
+      "description": "Vous incarnez un héros dédié au sauvetage de chats égarés dans des villages en proie aux flammes. Votre mission est de localiser ces félins et de les transporter en toute sécurité vers la SafeZone, le tout en visant le temps le plus court possible.",
+      "technologies": ["Unity", "C#"],
+      "lienGitHub": "https://github.com/Berachem/SaveTheCats",
+      "lienSiteWeb": "",
+      "lienRapport": "https://berachem-dev.notion.site/Infographie-3D-compte-rendu-PROJET-SaveTheCats-67c0f6d324fb483a899adb5af8a88c0e",
+      "media": "https://igadvisory.fr/opendata/SaveTheCats/assets/saveTheCatsDemo.mp4"
+    },
+    {
+      "nom": "Space Invaders 👾",
+      "descriptionCourte": "Jeu de Space Invaders en C# avec fonctionnalités multijoueur et boss final.",
+      "description": "Ce projet en C# consiste à développer le célèbre jeu Space Invaders, un classique de l'arcade où le joueur contrôle un vaisseau spatial afin de défendre la Terre contre une invasion extraterrestre. Le projet inclut des fonctionnalités multijoueur, des éléments de décoration visuelle, des sons, des bonus, un boss final et un leaderboard de fin de partie.",
+      "technologies": ["C#"],
+      "lienGitHub": "https://github.com/Berachem/space-invaders",
+      "lienSiteWeb": "https://berachem.dev/space-invaders/",
+      "lienRapport": "https://github.com/Berachem/space-invaders/blob/main/Rapport_Space_Invaders.pdf",
+      "media": "https://igadvisory.fr/opendata/spaceInvaders/space_invader_demo.mp4"
     }
+    
 
   ],
   "langages": [
@@ -181,6 +212,13 @@
       "largeur": 40,
       "hauteur": 45,
       "tooltip": "C#"
+    },
+    {
+      "nom": "Unity",
+      "icone": "https://berachem.dev/assets/img/Unity.png",
+      "largeur": 50,
+      "hauteur": 50,
+      "tooltip": "Unity"
     },
     {
       "nom": "Java",
