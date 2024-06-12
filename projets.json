@@ -1,5 +1,5 @@
 {
-  "projets": [
+  "scolaires": [
     {
       "nom": "Île de la Cité, Paris 🏛️🌍",
       "descriptionCourte": "La valorisation d'un patrimoine mondial en partenariat avec l'UNESCO",
@@ -141,6 +141,19 @@
     }
     
 
+  ],
+  "professionnels" : [
+    {
+      "nom": "ArtReport",
+      "descriptionCourte": "Dématérialisation des constats d'état des œuvres d'art avec une application Flutter.",
+      "description": "ArtReport est un projet visant à dématérialiser les constats d'état des œuvres d'art pour les musées, les collectionneurs et les institutions culturelles. Ce projet, mené par A&A Partners, simplifie la conservation et le suivi des œuvres grâce à une interface utilisateur améliorée, de nouvelles fonctionnalités et une meilleure sécurité. En tant que développeur en alternance, j'ai contribué à l'amélioration de la stabilité, de l'expérience utilisateur et des performances de cette application.",
+      "technologies": ["Flutter"],
+      "lienSiteWeb": "https://aa-partners.com/",
+      "entreprise": "A&A Partners",
+      "entrepriseLogo": "https://aa-partners.com/wp-content/uploads/2018/11/Logo-AA-Partners-PNG.png",
+      "media": ""
+    }
+    
   ],
   "langages": [
     {
