@@ -117,7 +117,7 @@
     .marquee {
         display: flex;
         width: calc(100% * 2); /* Ajustez selon le nombre d'images et leur duplication */
-        animation: marquee 10s linear infinite;
+        animation: marquee 30s linear infinite;
     }
 }
 
