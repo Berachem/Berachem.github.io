@@ -17,14 +17,14 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           loop
           muted
           playsInline
-          className="w-full h-48 object-cover"
+          className="w-full h-96 object-cover"
         >
           <source src={project.videoUrl} type="video/mp4" />
         </video>
       )}
  
       
-      <div className="p-6">
+ <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
           {project.title}
         </h3>
@@ -33,9 +33,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm text-gray-700 dark:text-gray-300"
+              className="px-3 py-1 text-sm text-gray-700 dark:text-gray-300"
             >
-              {tech}
+              <img src={"https://skillicons.dev/icons?i=" + tech.toLowerCase()} alt={tech} className="inline-block mr-2 h-10 w-10" />
+           
             </span>
           ))}
         </div>
