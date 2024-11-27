@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
-import { Briefcase, Code, GitCommitIcon, GithubIcon } from "lucide-react";
+import { Briefcase, Code, GitCommitIcon } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 

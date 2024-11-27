@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, User, CheckCircle, Target } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Target } from 'lucide-react';
 import { projects } from '../data/projects';
 import { Carousel } from 'flowbite-react';
 

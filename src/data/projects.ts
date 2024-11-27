@@ -2,13 +2,13 @@ import { Project } from '../types';
 
 
 // ALL DEMOS
-import Countdown from '../assets/img/projects/videos/countdown.webm';
+//import Countdown from '../assets/img/projects/videos/countdown.webm';
 import CroisadeTrailer from '../assets/img/projects/videos/Croisade_Trailer.mp4';
 import DemoCarbuviz from '../assets/img/projects/videos/Demo_Carbuviz.mp4';
 import DemoGIGBot from '../assets/img/projects/videos/Demo_GIG-Bot.mp4';
 import DemoAzul from '../assets/img/projects/videos/demoazul.mp4';
 import DemoEco from '../assets/img/projects/videos/demoeco.mp4';
-import DemoGraphes from '../assets/img/projects/videos/demographes.mp4';
+//import DemoGraphes from '../assets/img/projects/videos/demographes.mp4';
 import DemoKontabl from '../assets/img/projects/videos/demokontabl.mp4';
 import DemoLoop from '../assets/img/projects/videos/demoloop.mp4';
 import DemoUnesco from '../assets/img/projects/videos/demounesco.mp4';
@@ -328,6 +328,23 @@ export const projects: Project[] = [
         github: "https://github.com/Berachem/carbuviz"
     }
   },
+
+  {
+    id : 'space-invader',
+    title: "Space Invader 🚀",
+    description: "Jeu de tir spatial inspiré de Space Invaders.",
+    longDescription: "Développement d'un jeu de tir spatial en Python avec Pygame, inspiré du célèbre jeu Space Invaders.",
+    technologies: ["Cs", ".Net"],
+    thumbnail: SpaceInvaderDemo,
+    gallery: [{ media: SpaceInvaderDemo, caption: "Gameplay Space Invader" }],
+    role: "Développeur Principal",
+    duration: "2 mois",
+    links: {
+        website : "https://berachem.dev/SpaceInvader/",
+        documentation : "https://berachem.dev/space-invaders/Rapport_Space_Invaders.pdf",
+        github: "https://github.com/Berachem/space-invaders"
+  }
+},
 
   // Rajouter Projet :
    // Projet Machine Learning (CyberSécurité)

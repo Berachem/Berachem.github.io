@@ -1,4 +1,4 @@
-import { BitcoinIcon, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import {  Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { Section } from '../components/Section';
 import { ThemeToggle } from '../components/ThemeToggle';
 import { ProjectCard } from '../components/ProjectCard';
@@ -22,7 +22,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBitcoin } from '@fortawesome/free-brands-svg-icons';
 
 import TOEIC from '../assets/img/organizations/toeic.png';
-import { faSmile } from '@fortawesome/free-regular-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import ScrollDownArrow from '../components/ScrollDownArrow';
 
