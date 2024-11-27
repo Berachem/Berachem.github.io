@@ -1,24 +1,28 @@
 import { Bitcoin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBitcoin, faEthereum } from '@fortawesome/free-brands-svg-icons';
+import { faCoins } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../components/Footer';
 
 const cryptoProjects = [
   {
-    icon: "₿",
+    icon: <FontAwesomeIcon icon={faBitcoin} />,
     name: "Bitcoin",
     symbol: "BTC",
     description: "Le fameux..."
   },
   {
-    icon: "Ξ",
+    icon: <FontAwesomeIcon icon={faEthereum} />,
     name: "Ethereum",
     symbol: "ETH",
     description: "Le second fameux..."
   },
   {
-    icon: "🎮",
-    name: "Sandbox",
-    symbol: "SAND",
-    description: "Métaverse gaming"
+    icon: <FontAwesomeIcon icon={faCoins} />,
+    name: "Binance Coin",
+    symbol: "BNB",
+    description: "Le géant de l'échange"
   },
   {
     icon: "⚽",
@@ -62,7 +66,7 @@ export const CryptoHomePage = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-            <Bitcoin className="hidden md:block w-32 h-32 text-yellow-200 animate-bounce" />
+            <FontAwesomeIcon icon={faBitcoin} className="hidden md:block w-32 h-32 text-yellow-200 animate-bounce" />
           </div>
         </div>
       </section>
@@ -113,13 +117,7 @@ export const CryptoHomePage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white dark:bg-gray-800 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600 dark:text-gray-300">
-            © {new Date().getFullYear()} Fait avec ❤️ par Berachem MARKRIA
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

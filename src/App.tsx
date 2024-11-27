@@ -3,6 +3,7 @@ import { DevHomePage } from './pages/DevHomePage';
 import { CryptoHomePage } from './pages/CryptoHomePage';
 import { ProjectDetails } from './pages/ProjectDetails';
 import { Layout } from './components/Layout';
+import '../src/assets/App.css';
 
 function App() {
   return (

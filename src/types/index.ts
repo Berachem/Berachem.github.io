@@ -1,16 +1,28 @@
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+
 export interface Project {
-  videoUrl?: string;
+
   id: string;
+
+  // INFORMATIONS
   title: string;
   description: string;
   longDescription: string;
   technologies: string[];
-  imageUrl?: string;
-  gallery?: string[];
+
+  // VISUEL
+  thumbnail?: string; // video or image
+  gallery: Record<string, string>[]; // { "media": "url", "caption": "text" }
+
+  // DETAILS
   role?: string;
   duration?: string;
   challenges?: string[];
-  outcomes?: string[];
+  feedbacks?: string[];
+
+  // LINKS
+  links?: Record<string, string>; // { "github": "url", "website": "url" , "documentation": "url" }
+  
 }
 
 export interface Experience {
@@ -35,11 +47,11 @@ export interface Education {
 
 export interface Skill {
   category: string;
-  items: string[];
+  items: string[] | string[][];
 }
 
 export interface Interest {
-  icon: string;
+  icon: string | IconDefinition;
   text: string;
 }
 

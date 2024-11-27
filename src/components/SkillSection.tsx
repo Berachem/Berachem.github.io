@@ -13,15 +13,24 @@ export const SkillSection = ({ skills }: SkillSectionProps) => {
             {skill.category}
           </h3>
           <div className="flex flex-wrap gap-2">
-            {skill.items.map((item) => (
+            
+            { skill.items.length > 0 && typeof skill.items[0] === 'string' ? skill.items.map((item) => (
               <span
-                key={item}
+                key={item as string}
                 className="px-2 py-1 text-sm text-gray-700 dark:text-gray-300"
               >
                 
-                <img src={"https://skillicons.dev/icons?i=" + item.toLowerCase()} alt={item} className="inline-block mr-2 h-10 w-10" />
-                {item}
+                <img src={"https://skillicons.dev/icons?i=" + (item as string).toLowerCase()} alt={item as string} className="inline-block mr-2 h-10 w-10 icon-animated" />
+                {item as string}
      
+              </span>
+            ) ) : skill.items.map((item) => (
+              <span
+                key={Object.keys(item)[0]}
+                className="px-2 py-1 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <img src={Object.keys(item)[1] as string} alt={Object.keys(item)[0]} className="inline-block mr-2 h-10 w-10 icon-animated" />
+                {Object.keys(item)[0]}
               </span>
             ))}
           </div>

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { BitcoinIcon, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { Section } from '../components/Section';
 import { ThemeToggle } from '../components/ThemeToggle';
 import { ProjectCard } from '../components/ProjectCard';
@@ -13,12 +13,24 @@ import { projects } from '../data/projects';
 import Logo_AA_Partners from '../assets/img/organizations/aa.png';
 import Logo_Enedis from '../assets/img/organizations/enedis.png';
 import Logo_Unesco from '../assets/img/organizations/unesco_filled.png';
+import { Experience, Interest, Skill } from '../types';
+import { Carousel } from 'flowbite-react';
+import StatsSection from '../components/StatsSection';
+import Footer from '../components/Footer';
+import ScrollProgressBar from '../components/ScrollDownProgressBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBitcoin } from '@fortawesome/free-brands-svg-icons';
+
+import TOEIC from '../assets/img/organizations/toeic.png';
+import { faSmile } from '@fortawesome/free-regular-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import ScrollDownArrow from '../components/ScrollDownArrow';
 
 
 
 
 
-const experiences = [
+const experiences : Experience[] = [
   {
     company: "Enedis",
     role: "Lead Software Engineer & Product Owner",
@@ -81,31 +93,31 @@ const education = [
 
 
 
-const skills = [
+const skills : Skill[] = [
   {
     category: "Langages de Programmation",
     items: [
       "React", "TypeScript", "Flutter","Dart", "Symfony", "Python", "HTML", "CSS", 
-      "JavaScript", "PHP", "Java", "C", "Cs",  "Bash", "Lua"
+      "JavaScript", "PHP", "Java", "C", "Cs",  "Bash", "Lua", 
     ]
   },
   {
     category: "Systèmes & Logiciels",
     items: [
       "MySQL", "PostgreSQL", "Bootstrap","Tailwind", "Linux", "Git", "Github",
-       "Postman",  "Figma", , "mongodb", "Aws", "Unity", "Matlab"
+       "Postman",  "Figma", "MongoDB", "AWS", "Unity", "Matlab"
     ]
   },
   {
     category: "Certifications",
-    items: ["TOEIC (B2/C1)"]
+    items: [["TOEIC (B2/C1)" , TOEIC]]
   }
 ];
 
 
-const interests = [
+const interests : Interest[] = [
   { icon: "⚛️", text: "Théories Scientifiques et Découvertes" },
-  { icon: "₿", text: "Cryptomonnaies & Blockchain (BTC, ETH, XRP, CHZ...)" },
+  { icon: faBitcoin, text: "Cryptomonnaies & Blockchain (BTC, ETH, XRP, CHZ...)" },
   { icon: "🔧", text: "Hardware / Software" },
   { icon: "⚽", text: "Football" },
   { icon: "🚴‍♂️", text: "Vélo" },
@@ -136,6 +148,8 @@ export const DevHomePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <ThemeToggle />
+      <ScrollProgressBar />
+      <ScrollDownArrow />
       
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center relative overflow-hidden">
@@ -143,34 +157,41 @@ export const DevHomePage = () => {
           <img
             src="https://berachem.dev/assets/img/moi_bg_navy.png"
             alt="Berachem Markria"
-            className="w-48 h-48 rounded-full mx-auto mb-8 shadow-lg hover:scale-105 transition-transform duration-300"
-          />
+            className="w-48 h-48 rounded-full mx-auto mb-8 shadow-lg hover:scale-105 transition-transform animate-border inline-block bg-white bg-gradient-to-r from-blue-600 via-purple-500 to-white-500 bg-[length:400%_400%] p-1"
+          onClick={() => window.location.replace("/crypto")}
+         />
           <h1 className="text-5xl font-bold mb-4 text-gray-800 dark:text-white">
-            Berachem MARKRIA
+            Berachem 
+            
+            <span className="text-blue-600  ml-2">
+            MARKRIA
+            </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-            Lead Software Engineer apprenti & Passionné de développement
+            Bonjour, je suis
+            Lead Software Engineer apprenti & Passionné de développement 
+            <FontAwesomeIcon icon={faCode} className="w-6 h-6 inline-block ml-3 text-blue-600 animate-bounce" />
           </p>
           <div className="flex justify-center space-x-4">
             <a href="mailto:berachem.markria@gmail.com" className="hover:scale-110 transition-transform">
-              <Mail className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+              <Mail className="w-6 h-6 text-gray-600 dark:text-gray-300 icon-animated" />
             </a>
             <a href="tel:+33629161164" className="hover:scale-110 transition-transform">
-              <Phone className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+              <Phone className="w-6 h-6 text-gray-600 dark:text-gray-300 icon-animated" />
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-              <Github className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+            <a href="https://github.com/Berachem" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+              <Github className="w-6 h-6 text-gray-600 dark:text-gray-300 icon-animated" />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-              <Linkedin className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+            <a href="https://linkedin.com/in/berachem-markria" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+              <Linkedin className="w-6 h-6 text-gray-600 dark:text-gray-300 icon-animated" />
             </a>
           </div>
         </div>
       </section>
 
       <div className="container mx-auto px-4">
-        {/* About Section */}
-        <Section title="À propos">
+
+       {/*  <Section title="À propos">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 transform hover:scale-[1.02] transition-transform duration-300">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Bonjour ! Je m'appelle Berachem Markria, j'ai 21 ans et je suis ingénieur apprenti en informatique. 
@@ -178,16 +199,28 @@ export const DevHomePage = () => {
               et performantes.
             </p>
           </div>
-        </Section>
+        </Section> */}
 
         {/* Projects Section */}
         <Section title="Projets">
-          <div className="grid gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
+          <div className="relative w-full h-[800px]" id="projects">
+            <Carousel
+              indicators={true}
+              slideInterval={5000} // Durée d'affichage de chaque slide
+              className="h-full"
+            >
+              {projects.map((project) => (
+                <div
+                  key={project.id}
+                  className="flex justify-center items-center p-4"
+                >
+                  <ProjectCard project={project} />
+                </div>
+              ))}
+            </Carousel>
           </div>
         </Section>
+
 
         {/* Experience Section */}
         <Section title="Expérience Professionnelle">
@@ -215,11 +248,22 @@ export const DevHomePage = () => {
         {/* Interests Section */}
         <Section title="Intérêts">
           <InterestSection interests={interests} />
+          {/* Crypto button redirect */}
+          <button
+            onClick={() => window.location.replace("/crypto")}
+            className="mt-4 bg-orange-400 text-white px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition-transform"
+          >
+            Voir ma page d'investisseur <FontAwesomeIcon icon={faBitcoin} className="w-6 h-6" />
+          </button>
         </Section>
 
         {/* Merits Section */}
         <Section title="Mérites">
           <MeritSection merits={merits} />
+        </Section>
+
+        <Section title="Stats" >
+              <StatsSection />
         </Section>
 
         {/* Companies Section */}
@@ -229,13 +273,7 @@ export const DevHomePage = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-white dark:bg-gray-800 py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600 dark:text-gray-300">
-            © {new Date().getFullYear()} Fait avec ❤️ par Berachem MARKRIA
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

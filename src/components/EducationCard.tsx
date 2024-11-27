@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Education } from '../types';
+import { faAward } from '@fortawesome/free-solid-svg-icons';
 
 interface EducationCardProps {
   education: Education;
@@ -13,7 +15,7 @@ export const EducationCard = ({ education }: EducationCardProps) => {
             <img
               src={education.logo}
               alt={`${education.school} logo`}
-              className="w-12 h-12 object-contain rounded-full"
+              className="w-16 object-contain rounded-lg"
             />
           )}
           <div>
@@ -21,6 +23,7 @@ export const EducationCard = ({ education }: EducationCardProps) => {
               {education.degree} 
               {education.major && 
                 <span className="text-sm bg-red-500 text-white mx-2 px-2 py-1 rounded-full">
+                  <FontAwesomeIcon icon={faAward} className="mr-2 text-yellow-300" />
                   Major de promotion
                   </span>
               }

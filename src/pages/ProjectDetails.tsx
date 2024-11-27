@@ -1,10 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, CheckCircle, Target } from 'lucide-react';
 import { projects } from '../data/projects';
+import { Carousel } from 'flowbite-react';
 
 export const ProjectDetails = () => {
   const { id } = useParams();
-  const project = projects.find(p => p.id === id);
+  const project = projects.find((p) => p.id === id);
 
   if (!project) {
     return (
@@ -34,23 +35,40 @@ export const ProjectDetails = () => {
       </Link>
 
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-      {project.videoUrl && (
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-64 object-cover"
-        >
-          <source src={project.videoUrl} type="video/mp4" />
-        </video>
-      )}
-        {!project.videoUrl && project.imageUrl && (
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className="w-full h-64 object-cover"
-          />
+        {project.thumbnail && (
+          <div className="w-full h-64 md:h-96">
+            {project.gallery && project.gallery.length > 0 ? (
+              <Carousel>
+                {project.gallery.map((item, index) => (
+                  <div key={index} className="relative w-full h-full">
+                    {item.media.endsWith('.mp4') || item.media.endsWith('.webm') ? (
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src={item.media} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <img
+                        src={item.media}
+                        alt={item.caption || `Image ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                  </div>
+                ))}
+              </Carousel>
+            ) : (
+              <img
+                src={project.thumbnail}
+                alt={project.title}
+                className="w-full h-64 object-cover"
+              />
+            )}
+          </div>
         )}
 
         <div className="p-8">
@@ -100,25 +118,7 @@ export const ProjectDetails = () => {
               </div>
             )}
 
-            {project.outcomes && (
-              <div>
-                <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
-                  <CheckCircle className="w-5 h-5" />
-                  Résultats
-                </h2>
-                <ul className="space-y-2">
-                  {project.outcomes.map((outcome, index) => (
-                    <li
-                      key={index}
-                      className="flex items-start gap-2 text-gray-600 dark:text-gray-300"
-                    >
-                      <span className="mt-1">•</span>
-                      {outcome}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+          
           </div>
 
           <div>
